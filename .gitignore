@@ -1,0 +1,43 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Runtime outputs
+results/
+logs/
+log_dir/
+runs/
+checkpoints/
+outputs/
+
+# Datasets and extracted media are too large for git
+VideoEmotion8--imgs/
+VideoEmotion8--mp3/
+MusicVideo-6/
+Ekman-6/
+*.mp4
+*.mp3
+*.wav
+*.jpg
+*.jpeg
+*.png
+
+# Model weights are usually large; publish them through Releases, cloud storage, or Git LFS.
+*.pdparams
+*.pth
+*.pt
+*.ckpt
+
+# Local editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
