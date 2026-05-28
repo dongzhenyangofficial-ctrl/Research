@@ -37,11 +37,13 @@ cd PE-CLIP
 pip install -r requirements.txt
 ```
 
-项目还依赖 FFmpeg，用于视频抽帧和音频提取。
+项目预处理还依赖 FFmpeg，用于视频抽帧和音频提取。
 
 ## 数据准备
 
-数据集链接见 `Dataset/README.md`。以 VideoEmotion-8 为例，下载原始视频后可使用各子项目 `tools/` 目录下的脚本完成预处理：
+抽帧处理过的图片数据集链接见 `Dataset/README.md`。
+音频模态需要下载原始视频进行提取。
+以 VideoEmotion-8 为例，下载原始视频后可使用各子项目 `tools/` 目录下的脚本完成预处理：
 
 ```bash
 python tools/video2jpg.py
@@ -78,5 +80,4 @@ python main.py
 - `test.py`
 
 ## 说明
-
-大体积数据、抽帧结果、音频文件、训练输出和模型权重未纳入 Git 管理。若需要共享权重文件，建议使用 GitHub Releases、网盘链接或 Git LFS。
+大体积数据、抽帧结果、音频文件和模型权重未纳入 Git 管理。若需要共享权重文件，邮件联系2920217477@qq.com。
